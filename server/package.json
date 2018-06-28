@@ -1,0 +1,23 @@
+{
+  "name": "npm-dependencies",
+  "version": "1.1.0",
+  "description": "microservice that building dependency tree",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codescoopltd/npm-crawler"
+  },
+  "scripts": {
+    "local": "PROFILE=LOCAL node app.js",
+    "prod": "PROFILE=PROD node app.js"
+  },
+  "dependencies": {
+    "mongodb": "3.0.4",
+    "express": "4.16.3",
+    "body-parser": "^1.18.3"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.1.0"
+  }
+}
