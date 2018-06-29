@@ -1,4 +1,9 @@
-FROM ubuntu:latest
+FROM node:carbon
 
-RUN apt-get update
-RUN apt-get install nano
+WORKDIR /usr/src
+
+COPY /server ./
+RUN npm install
+
+EXPOSE 3000
+CMD [ "npm", "run", "start" ]

@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-const url = "mongodb://127.0.0.1:27017/library";
+const url = "mongodb://mongo:27017/library";
 const dbName = "library";
 
 const bookCollectionName = 'book';
